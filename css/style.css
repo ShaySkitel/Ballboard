@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.cell img {
+    width: 25px;
+    height: auto;
+}
+
+.floor {
+    background-color: gray;
+}
+
+.wall {
+    background-color: brown;
+}
+
+.game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.win-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 2rem;
+}
+
+.win-modal h1 {
+    color: #eee;
+}
+
+.win-modal button {
+    color: #eee;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 1em 3em;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.win-modal button:hover {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
